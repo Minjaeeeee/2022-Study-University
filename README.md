@@ -5,3 +5,4 @@
 4. unix
 5. java
 6. 빅데이터의 활용(python)
+
