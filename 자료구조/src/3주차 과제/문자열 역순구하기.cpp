@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 
-
+[인터넷참조]
 //int reverse(char s[]) 
 //{
 //    int i, j = 0;
