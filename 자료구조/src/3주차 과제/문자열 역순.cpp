@@ -1,17 +1,18 @@
 #include <stdio.h>
 #include <string.h>
 
+//영어로 주시면 출력가능
 int main(void)
 {
 	char str[100];
 	int len = 0;
 	
-	printf("�ڵ带 �Է��ϼ���!:");
+	printf("ÄÚµå¸¦ ÀÔ·ÂÇÏ¼¼¿ä!:");
 	scanf("%s",str);
 	
 	len = strlen(str);
 	
-	printf("���: ");
+	printf("Ãâ·Â: ");
 	for(int i=len-1; i>=0; --i)
 	{
 		printf("%c",str[i]);
