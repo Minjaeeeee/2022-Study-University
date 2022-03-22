@@ -1,4 +1,4 @@
-
+//인터넷 자료
 #include <math.h>
 #include <stdio.h>
 
@@ -6,7 +6,7 @@
 int convert(long long n);
 int main() {
     long long n;
-    printf("������ �Է�: ");
+    printf("ÀÌÁø¼ö ÀÔ·Â: ");
     scanf("%lld", &n);
     printf("%lld  = %d \n", n, convert(n));
     return 0;
