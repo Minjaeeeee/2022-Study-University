@@ -1,12 +1,12 @@
 #include <stdio.h>
 
-//3°³°ú¸ñ Æò±Õ (Àü¿ªÇÔ¼ö»ç¿ë) 
-void average(int kor, int eng, int math)
+//3ê°œê³¼ëª© í‰ê·  (ì „ì—­í•¨ìˆ˜ì‚¬ìš©) 
+int average(int kor, int eng, int math)
 {
 	int sum=0;
 	double ave=0;
 	ave = ((double)kor + (double)eng + (double)math)/ 3;
-	printf("Æò±Õ : %lf\n",ave);
+    return (int)ave;
 }
 
 
@@ -15,11 +15,15 @@ int main()
 {
 	int kor=0, eng=0, math=0;
 	int sum;
-	printf("±¹¾î, ¿µ¾î , ¼öÇĞ °ú¸ñÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.: ");
-	scanf("%d%d%d",&kor,&eng,&math);
-	average(kor,eng,math); 
+	double ave;
+	printf("êµ­ì–´, ì˜ì–´ , ìˆ˜í•™ ê³¼ëª©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.: ");
+	for(int i=0; i<3; i++)
+	{
+	    scanf("%d%d%d",&kor,&eng,&math);
+	    ave = average(kor,eng,math);
+	    printf("í‰ê· :%lf\n",ave);
+	}
+	
+
 }
-
-
-
 
