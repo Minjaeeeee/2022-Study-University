@@ -1,40 +1,28 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//10Áø¼ö¸¦ 2Áø¼ö·Îº¯È¯  
-void Trantwo(int ten)
+//10ì§„ìˆ˜ë¥¼ 2ì§„ìˆ˜ë¡œë³€í™˜  
+int Trantwo(int n,int count)
 {
-    int div = 0;
-    int na = 0;
-    int arr[100];
-    int count=1;
-    arr[0] = ten%2;
-    
-    while(ten>0)
-    {
-        ten = ten/2;
-        na =  ten%2;
-        arr[count] = na;
-        
-        if(ten<1) break;
-        
-        printf("count:%d , na: %d , ten: %d \n",count,na,ten);
-        count++;
-    }
-    
-    
-    printf("%d\n",count);
-    printf("===============================\n");
-    printf("\n");
-    printf("\n"); 
-    for(int i=count-1; i>=0; i--)
-    {
+   int arr[100];
+   int na;
+  
+   
+     na = n%2;
+     arr[count] = na;
+     //1ì”©ì¦ê°€í•©ë‹ˆë‹¤.
+   
+    if(n<2) 
+   {
+       arr[count] = n;
+       for(int i=count; i>=0; i--)
         printf("%d",arr[i]);
-    }
-    printf("\n");
-    printf("\n");
-    printf("\n");
-    printf("===============================\n");
+       return 0;
+   }
+   
+  
+   printf("%d %d count=%d\n",n,na,count);
+   Trantwo(n/2,count+1); //2ë¡œ ë‚˜ëˆˆ ê°’ì„ ë³´ë‚´ì¤€ë‹¤ 
 }
 
 
@@ -42,7 +30,7 @@ void Trantwo(int ten)
 int main()
 {
    int ten,two,sixteen;
-    printf("10Áø¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!: ");
+    printf("10ì§„ìˆ˜ë¥¼ ì…ë ¥í•´ì£¼ì„¸ìš”!: ");
     scanf("%d",&ten);
-    Trantwo(ten);
+    Trantwo(ten,0);
 }
