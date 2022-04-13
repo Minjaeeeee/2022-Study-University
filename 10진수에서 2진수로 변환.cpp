@@ -18,7 +18,7 @@ void Trantwo(int ten)
         
         if(ten<1)
         {
-            break;
+            break; 
         }
         
         printf("count:%d , na: %d , ten: %d \n",count,na,ten);
@@ -45,7 +45,7 @@ void Trantwo(int ten)
 int main()
 {
    int ten,two,sixteen;
-    printf("10Áø¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!: ");
+    printf("10ÃÃ¸Â¼Ã¶Â¸Â¦ Ã€Ã”Â·Ã‚Ã‡Ã˜ÃÃ–Â¼Â¼Â¿Ã¤!: ");
     scanf("%d",&ten);
     Trantwo(ten);
 }
