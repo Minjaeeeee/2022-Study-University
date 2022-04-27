@@ -4,17 +4,17 @@ void Sum(int kor, int eng, int math)
 {
 	int sum=0;
 	sum = (kor+eng+math);
-	printf("ÇÕ»ê: %d\n",sum);	
+	printf("í•©ì‚°: %d\n",sum);	
 } 
 
 
-//3°³°ú¸ñ Æò±Õ,ÇÕ»ê  (Àü¿ªÇÔ¼ö»ç¿ë) 
+//3ê°œê³¼ëª© í‰ê· ,í•©ì‚°  (ì „ì—­í•¨ìˆ˜ì‚¬ìš©)  
 void Average(int kor, int eng, int math)
 {
 	int sum=0;
 	double ave=0;
 	ave = ((double)kor + (double)eng + (double)math)/ 3;
-	printf("Æò±Õ : %lf\n",ave);
+	printf("í‰ê·  : %lf\n",ave);
 }
 
 
@@ -23,7 +23,7 @@ int main()
 {
 	int kor=0, eng=0, math=0;
 	int sum;
-	printf("±¹¾î, ¿µ¾î , ¼öÇĞ °ú¸ñÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä.: ");
+	printf("êµ­ì–´, ì˜ì–´ , ìˆ˜í•™ ê³¼ëª©ì„ ì…ë ¥í•´ì£¼ì„¸ìš”.: ");
 	scanf("%d%d%d",&kor,&eng,&math);
 	
 	printf("==================================\n");
