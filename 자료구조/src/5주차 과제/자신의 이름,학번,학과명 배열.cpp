@@ -5,16 +5,17 @@ int main(void)
 	char major[10],num[10],name[10];
 	int i,n=0;
 	
-	printf("È½¼ö¸¦ ÀÔ·ÂÇØÁÖ¼¼¿ä!: ");
+	printf("íšŸìˆ˜ë¥¼ ìž…ë ¥í•´ì£¼ì„¸ìš”!: ");
 	scanf("%d",&n); 
 	
 	for(i=0; i<n; i++)
 	{
-		printf("ÀÌ¸§ ÇÐ¹ø ÇÐ°ú¸íÀ» ÀÔ·ÂÇØÁÖ¼¼¿ä: ");
+		printf("ì´ë¦„ í•™ë²ˆ í•™ê³¼ëª…ì„ ìž…ë ¥í•´ì£¼ì„¸ìš”: ");
 		scanf("%s%s%s",&name[i],&num[i],&major[i]);
-		printf("ÀÌ¸§:%s ÇÐ¹ø:%s ÇÐ°ú:%s \n",name[i],num[i],major[i]);
+		printf("ì´ë¦„:%s í•™ë²ˆ:%s í•™ê³¼:%s \n",name[i],num[i],major[i]);
 		printf("\n");
 	}
 	
 	return 0;
 }
+ 
