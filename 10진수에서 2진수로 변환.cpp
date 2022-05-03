@@ -31,7 +31,7 @@ void Trantwo(int ten)
     printf("\n");
     printf("\n"); 
     for(int i=count-1; i>=0; i--)
-    {
+    { 
         printf("%d",arr[i]);
     }
     printf("\n");
