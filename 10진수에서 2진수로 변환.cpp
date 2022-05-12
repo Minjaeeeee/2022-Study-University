@@ -3,7 +3,7 @@
 #include <string.h>
 
 void Trantwo(int ten)
-{
+{ 
     int div = 0;
     int na = 0;
     int arr[100];
@@ -25,7 +25,7 @@ void Trantwo(int ten)
         count++;
     }
     
-    
+     
     printf("%d\n",count);
     printf("===============================\n");
     printf("\n");
