@@ -19,7 +19,7 @@ void Trantwo(int ten)
         if(ten<1)
         {
             break; 
-        }
+        } 
         
         printf("count:%d , na: %d , ten: %d \n",count,na,ten);
         count++;
