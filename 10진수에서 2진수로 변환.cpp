@@ -25,7 +25,7 @@ void Trantwo(int ten)
         count++;
     }
     
-     
+      
     printf("%d\n",count);
     printf("===============================\n");
     printf("\n");
